@@ -1,9 +1,10 @@
 package br.com.buscaemprofundidade.utils;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class NoUtils {
-	public static List<String> gerarFilhos(String estadoAtual) {
+    public static List<String> gerarFilhos(String estadoAtual) {
         List<String> filhos = new ArrayList<>();
 
         switch (estadoAtual.indexOf("X")) {
@@ -64,14 +65,14 @@ public class NoUtils {
         return filhos;
     }
 
-	public static void printNo(String no) {
-		ArrayList<String> nos = new ArrayList<>();
+    public static void printNo(String no) {
+        ArrayList<String> nos = new ArrayList<>();
 
-		System.out.println("###########################################################################################################");
-		nos.add(String.join("|", String.valueOf(no.charAt(0)), String.valueOf(no.charAt(1)), String.valueOf(no.charAt(2))));
-		nos.add(String.join("|", String.valueOf(no.charAt(3)), String.valueOf(no.charAt(4)), String.valueOf(no.charAt(5))));
-		nos.add(String.join("|", String.valueOf(no.charAt(6)), String.valueOf(no.charAt(7)), String.valueOf(no.charAt(8))));
+        System.out.println("###########################################################################################################");
+        nos.add(String.join("|", String.valueOf(no.charAt(0)), String.valueOf(no.charAt(1)), String.valueOf(no.charAt(2))));
+        nos.add(String.join("|", String.valueOf(no.charAt(3)), String.valueOf(no.charAt(4)), String.valueOf(no.charAt(5))));
+        nos.add(String.join("|", String.valueOf(no.charAt(6)), String.valueOf(no.charAt(7)), String.valueOf(no.charAt(8))));
 
-		nos.stream().forEach(System.out::println);
-	}
+        nos.stream().forEach(System.out::println);
+    }
 }
